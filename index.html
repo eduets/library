@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <h1>Library</h1>
+    <div id="books-container" class="elements-container"></div>
+    <button id="button-show-dialog-add-book" class="button-add">
+        <img src="./images/plus.svg" alt="Add Icon">
+    </button>
+    <dialog id="dialog-add-book">
+        <form id="form-add-book" action="">
+            <label for="book-title">Title</label>
+            <input id="book-title" type="text" name="bookTitle" required>
+            <label for="book-author">Author</label>
+            <input id="book-author" type="text" name="bookAuthor" required>
+            <label for="book-pages">Pages</label>
+            <input id="book-pages" type="number" min="0" name="bookPages" required>
+            <label for="book-read">Alreay read <input id="book-read" type="checkbox" name="bookRead"></label>
+            <button id="button-cancel-add-book" type="button">Cancel</button>
+            <button id="button-confirm-add-book" type="submit">Confirm</button>
+        </form>
+    </dialog>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
